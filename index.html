@@ -1,0 +1,50 @@
+<!--
+时间：2020/2/16
+作者：搬砖小哥
+github：https://github.com/bzxg-space
+接口来自古诗词：https://gushi.ci/
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>古诗词 - 分类版</title>
+		<meta name="author" content="搬砖小哥" />
+	</head>
+	<body>
+		<article>
+			<header>
+				<h3>古诗词 - 分类版</h3>
+			</header>
+			<nav>
+				<ul>
+					<li onclick="show(1);" class="active">任意</li>
+					<li onclick="show(2);">抒情</li>
+					<li onclick="show(3);">四季</li>
+					<li onclick="show(4);">山水</li>
+					<li onclick="show(5);">天气</li>
+					<li onclick="show(6);">人物</li>
+					<li onclick="show(7);">人生</li>
+					<li onclick="show(8);">生活</li>
+					<li onclick="show(9);">节日</li>
+					<li onclick="show(10);">动物</li>
+					<li onclick="show(11);">植物</li>
+					<li onclick="show(12);">食物</li>
+					<div style="clear:both;"></div>
+				</ul>
+			</nav>
+			<section id="hitokoto">
+				<button type="button" onclick="copy();">复制</button>
+				<div id="word"></div>
+			</section>
+			<button type="button" onclick="reload();">再来一句！</button>
+			<footer>
+				<p>接口来自古诗词 - <a href="https://gushi.ci/">gushi.ci</a></p>
+			</footer>
+		</article>
+	</body>
+	<script type="text/javascript" src="js/toast.js"></script>
+	<script type="text/javascript" src="js/copy.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</html>

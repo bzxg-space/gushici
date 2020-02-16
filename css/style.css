@@ -1,0 +1,209 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* 字体 by http://www.fonts.net.cn/font-32030420746.html */
+@font-face {
+	font-family: '站酷快乐体';
+	src: url('../fonts/站酷快乐体.ttf');
+}
+
+body {
+	padding: 2px;
+}
+
+button {
+	font-family: "站酷快乐体";
+	letter-spacing: 0.15em;
+}
+
+article {
+	width: 99%;
+	max-width: 1000px;
+	min-width: 300px;
+	margin: 0px auto;
+	/* font-family: "微软雅黑", arial; */
+	font-family: "站酷快乐体";
+	border-radius: 5px;
+	border: solid 1px grey;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	-webkit-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	-moz-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	-ms-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	-o-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	filter: progid:DXImageTransform.Microsoft.Shadow(Color='rgba(136, 136, 136, 0.5)', Direction='135', Strength='5');
+}
+
+header {
+	text-align: center;
+	height: 40px;
+	font-weight: normal;
+	line-height: 40px;
+	letter-spacing: 0.2em;
+	text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+	/* -webkit-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5); */
+	-moz-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+	-ms-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+	-o-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+	filter: Shadow(Color='rgba(0, 0, 0, 0.5)', Direction='135', Strength='3');
+	filter: dropshadow(OffX=5, OffY=5, Color='rgba(0, 0, 0, 0.5)', Positive='true');
+}
+
+nav {
+	width: 95%;
+	padding: 8px;
+	margin: 10px auto;
+	background: #00a4ff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 6px rgb(0, 164, 255, 0.5);
+}
+
+nav ul li {
+	float: left;
+	width: 25%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	list-style-type: none;
+	color: white;
+	border-bottom: solid 2px #00a4ff;
+	letter-spacing: 0.2em;
+}
+
+li:hover {
+	background: #1AAF5D;
+}
+
+.active {
+	border: none;
+	border-bottom: solid 2px #8800ff;
+}
+
+section {
+	width: 90%;
+	/* height: 350px; */
+	height:280px;
+	margin: 30px auto 0px;
+	position: relative;
+	border: solid 1px gray;
+}
+
+section button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px 8px;
+	border: none;
+	color: white;
+	background: #FF69B4;
+	display: block;
+	font-size: 14px;
+}
+
+section div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	width: 95%;
+	line-height: 28px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	border-bottom: solid 1px gray;
+	/* font-family: "站酷快乐体"; */
+}
+
+article>button {
+	display: block;
+	width: 145px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	background: #FF69B4;
+	margin: 10px auto;
+}
+
+footer {
+	height: 30px;
+	color: darkgray;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 10px;
+	letter-spacing: 0.12em;
+}
+
+@media (max-width:420px) {
+	article {
+		width: 96%;
+	}
+
+	nav {
+		width: 90%;
+	}
+}
+
+/* 625px */
+@media (max-height:645px) {
+	header {
+		height: 30px;
+		line-height: 30px;
+	}
+
+	nav {
+		margin: 5px auto 0px;
+	}
+
+	article {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		margin: 5px auto;
+	}
+
+	section {
+		/* height: 320px; */
+		margin: 10px auto 0px
+	}
+
+	article>button {
+		margin: 10px auto;
+		width: 125px;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	footer {
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+
+	nav ul li {
+		height: 30px;
+		line-height: 30px;
+	}
+}
