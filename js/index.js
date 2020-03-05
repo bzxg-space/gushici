@@ -42,7 +42,8 @@ function ajax(url) {
 	xmlhttp.send(); //发送请求
 	xmlhttp.onreadystatechange = function() {
 		if (xmlhttp.status == 200 && xmlhttp.readyState == 4) {
-			var result = JSON.parse(xmlhttp.response);
+			var temp = JSON.parse(xmlhttp.response);
+			var result = temp.content + "——" + temp.author + "《" + temp.origin + "》";
 			if (window.screen.width > 420) {
 				word.style.cssText = "font-size:22px;";
 			} else {
@@ -54,7 +55,7 @@ function ajax(url) {
 					word.style.cssText = "font-size:16px;line-height:25px;";
 				}
 			}
-			word.innerText = result.content+"——"+result.author+"《"+result.origin+"》";
+			word.innerText = result;
 		}
 	}
 }
