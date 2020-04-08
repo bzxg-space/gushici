@@ -30,17 +30,17 @@ article {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
-	box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	transform: translate(-50%, -50%);
 	-webkit-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
 	-moz-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
 	-ms-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
 	-o-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
 	filter: progid:DXImageTransform.Microsoft.Shadow(Color='rgba(136, 136, 136, 0.5)', Direction='135', Strength='5');
+	box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
 }
 
 header {
@@ -49,13 +49,13 @@ header {
 	font-weight: normal;
 	line-height: 40px;
 	letter-spacing: 0.2em;
-	text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
-	/* -webkit-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5); */
+	-webkit-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5); 
 	-moz-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 	-ms-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 	-o-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 	filter: Shadow(Color='rgba(0, 0, 0, 0.5)', Direction='135', Strength='3');
 	filter: dropshadow(OffX=5, OffY=5, Color='rgba(0, 0, 0, 0.5)', Positive='true');
+	text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -64,6 +64,10 @@ nav {
 	margin: 10px auto;
 	background: #00a4ff;
 	border-radius: 5px;
+	-webkit-text-shadow: 5px 5px 6px rgb(0, 164, 255, 0.5);
+	-moz-text-shadow: 5px 5px 6px rgb(0, 164, 255, 0.5);
+	-ms-text-shadow: 5px 5px 6px rgb(0, 164, 255, 0.5);
+	-o-text-shadow: 5px 5px 6px rgb(0, 164, 255, 0.5);
 	box-shadow: 5px 5px 6px rgb(0, 164, 255, 0.5);
 }
 
@@ -113,17 +117,18 @@ section div {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	width: 95%;
 	line-height: 28px;
 	letter-spacing: 0.2em;
 	text-align: center;
 	border-bottom: solid 1px gray;
 	/* font-family: "站酷快乐体"; */
+	word-wrap:break-word;
 }
 
 article>button {
@@ -175,11 +180,11 @@ footer {
 		position: relative;
 		top: 0;
 		left: 0;
-		transform: none;
 		-webkit-transform: none;
 		-moz-transform: none;
 		-ms-transform: none;
 		-o-transform: none;
+		transform: none;
 		margin: 5px auto;
 	}
 
